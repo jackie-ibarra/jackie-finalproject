@@ -1,0 +1,22 @@
+{% extends '_templates/base.njk' %}
+
+{% block content %}
+<article class="container">
+  <h1>Check out all the funky places Austin has to offer!</h1>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus aliquid repudiandae quia tempore tempora dolor aspernatur est maxime corrupti rerum, ut sunt provident cum animi. Voluptates adipisci consequuntur in vero.</p>
+  <div class="row">
+    {% for landmarks in places.landmarks %}
+    <div class="col-sm-6 col-lg-6">
+      <div class="card mb-4 border-dark">
+        <div class="card-body">
+          <h5 class="card-title">{{ landmarks.name }}</h5>
+          <h6 class= "card-subhead text-secondary"> {{ landmarks.location }} </h6>
+          <p class="card-text text-dark">{{ landmarks.description }}</p>
+          <a href="{{ landmarks.url }}" target="_blank" >Source</a>
+      </div>
+    </div>
+  </div>
+    {% endfor %}
+</div>
+</article>
+{% endblock %}
