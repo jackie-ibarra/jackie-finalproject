@@ -1,9 +1,9 @@
 {
   "files": [
     {
-      "fileId": "1RgMhjtkXlbbf9uzSzy_xPRKwxcVZIZqVytgM_JoU4E4",
+      "fileId": "1e79AZv4U7DUBTdhMzeS-bGVd0dlmjJBkxT8mHZsC8tQ",
       "type": "doc",
-      "name": "library"
+      "name": "eating"
     },
     {
       "fileId": "1gDwO-32cgpBDn_0niV0iu6TqQTaRDr4nmSqnT53magY",
@@ -19,10 +19,10 @@
   "to_bake": [
     {
       "template": "bake-book",
-      "data": "library",
-      "array": "books",
-      "slug": "slug",
-      "path": "books"
+      "data": "eating",
+      "array": "restaurants",
+      "slug": "name",
+      "path": "restaurant"
     }
   ]
 }
