@@ -18,11 +18,11 @@
   ],
   "to_bake": [
     {
-      "template": "bake-book",
-      "data": "eating",
-      "array": "restaurants",
-      "slug": "name",
-      "path": "restaurant"
+      "template": "bake-blog",
+      "data": "places",
+      "array": "landmarks",
+      "slug": "slug",
+      "path": "blog"
     }
   ]
 }

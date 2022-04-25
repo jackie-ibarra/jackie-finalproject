@@ -9,6 +9,20 @@
       <h1>Here are all the ways you can explore the beautiful city of Austin!</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur cumque sed tempora unde praesentium libero dolorem optio aliquam consequuntur delectus inventore est, enim fuga neque omnis, deserunt aliquid, iste magnam?</p>
     </div>
+  <div class="row">
+    {% for landmarks in places.landmarks %}
+    <div class="col-sm-6 col-lg-6">
+      <div class="card mb-4 border-dark">
+        <img src= "../img/{{ landmarks.image }}" class="card-img-top" alt="a restaurant in Austin"> 
+        <div class="card-body">
+          <h5 class="card-title">{{ landmarks.name }}</h5>
+          <h6 class= "card-subhead text-secondary"> {{ landmarks.location }}</h6>
+          <p class= "card-text text-dark"> {{ landmarks.activites }}</p>
+          <a href="blog/{{ landmarks.slug }}.html" target="_blank" >Read More Here!</a>
+      </div>
+    </div>
+  </div>
+    {% endfor %}
   </div>
 </div>
 {% endblock %}

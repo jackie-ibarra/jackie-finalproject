@@ -1,0 +1,19 @@
+{% extends '_templates/base.njk' %}
+{% set relative_path = "../" %}
+{% from '_macros/prose.njk' import prose %}
+
+{% block page_title %}{{ headline }}{% endblock %}
+
+{% block page_description %}{{ headline }} Landmarks {% endblock %}
+
+{% block content %}
+  <article class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <img src="../img/{{ imagebw }}" alt="landmark in Austin" class="img-fluid mb-4">
+        <p>{{ description | safe }}</p>
+        {{ prose(post) }}
+      </div>
+    </div>
+  </article>
+{% endblock %}
