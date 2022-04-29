@@ -7,15 +7,15 @@
 {% block page_description %}{{ headline }} Landmarks {% endblock %}
 
 {% block content %}
-  <article class="container">
+  <article class="container p-2">
     <div class="row">
-      <div class="blog col-lg-6">
-        <h5>{{ name }}</h5>
-        <h6> {{established }} </h6>
+      <div id= "blog" class="col-md-6 p-2">
+        <h5 class= "subheads">{{ name }}</h5>
+        <h6 class= "subhead"> {{established }} </h6>
         <p> {{description | safe}} </p>
       </div>
-      <div class="col-lg-6">
-        <img src="../img/{{ imagebw }}" alt="" class="img-fluid mb-4">
+      <div class="col-md-6">
+        <img src="../img/{{ imagebw }}" alt="landmark in black and white" class="img-fluid mb-4">
         {{ prose(post) }}
       </div>
     </div>

@@ -1,13 +1,13 @@
 
 {% extends '_templates/base.njk' %}
-{% block page_title %}Restaurants{% endblock %}
+{% block page_title %} Home {% endblock %}
 
 {% block content %}
 <div class="container">
   <div class="row">
     <div class="col">
-      <h1>Here are all the ways you can explore the beautiful city of Austin!</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur cumque sed tempora unde praesentium libero dolorem optio aliquam consequuntur delectus inventore est, enim fuga neque omnis, deserunt aliquid, iste magnam?</p>
+      <h1>Here are all the ways you can explore the <span style="color:#FF7733;font-weight:bold" >beautiful </span> city of Austin!</h1>
+      <p>The city of Austin is a large city in Texas. It's known for its wackiness, nightlife, and extraordinary music. Hailing as the live music capitol of the world, Austin is home to so many venues. The city has so much to offer - everything from dive bars to hiking scences to tasty restaurants, Austin has a place for everyone! Look around, stay awhile, try a place, and keep Austin weird! </p>
     </div>
   <div class="row">
     {% for landmarks in places.landmarks %}

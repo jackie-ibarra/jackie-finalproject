@@ -71,6 +71,24 @@
       "address": "2400 E Oltorf St #1A, Austin, TX 78741",
       "category": "Pan-Asian",
       "image": "888.jpg"
+    },
+    {
+      "name": "Ramen Tatsu-Ya",
+      "address": "1600 E 6th St, Austin, TX 78702",
+      "category": "Asian",
+      "image": "ramentatsuya.jpg"
+    },
+    {
+      "name": "Red River Cafe",
+      "address": "2912 Medical Arts St, Austin, TX 78705",
+      "category": "Brunch",
+      "image": "redrivercafe.jpg"
+    },
+    {
+      "name": "Burrito Factory",
+      "address": "2025 Guadalupe St #244, Austin, TX 78705",
+      "category": "Mexican",
+      "image": "burritofactory.jpg"
     }
   ]
 }
